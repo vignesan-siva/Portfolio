@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Data Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .skill-bar { transition: width 1s ease-in-out; }
+        .azure-blue { color: #0078d4; }
+        .azure-bg { background-color: #0078d4; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-lg">
+                <img src="https://github.com/vignesan-siva/Resume-vignesan/blob/main/vignesan%20profile%20pic.jpg?raw=true" alt="Vignesan Saravanan" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-bold mb-2">Vignesan Saravanan</h1>
+            <h2 class="text-xl font-light mb-4">Azure Data Engineer</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">Passionate about building scalable data solutions on Microsoft Azure. Experienced in designing and implementing robust data pipelines, analytics platforms, and cloud-native architectures.</p>
+            <div class="flex justify-center space-x-4">
+                <button onclick="scrollToSection('contact')" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Get In Touch</button>
+                <button onclick="downloadResume()" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Download Resume</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-center space-x-8 py-4">
+                <button onclick="scrollToSection('about')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</button>
+                <button onclick="scrollToSection('skills')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Skills</button>
+                <button onclick="scrollToSection('experience')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Experience</button>
+                <button onclick="scrollToSection('projects')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Projects</button>
+                <button onclick="scrollToSection('education')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Education</button>
+                <button onclick="scrollToSection('certifications')" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Certifications</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            With 3.5+ years of total work experience as an Azure Data Engineer, I have keen experience in helping companies collect, collate, and explore digital assets. I possess skilled technical expertise in Azure services ranging from Azure Databricks, Azure Data Factory, Microsoft Fabric and cloud services.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            I'm a dedicated big data industry professional with a history of meeting company goals utilizing consistent and organized practices. Skilled in working under pressure and adapting to new situations and challenges to enhance the organizational brand.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Professional at building the infrastructure required for optimal ETL/ELT of data from a wide variety of data sources using SQL and Azure. I have the ability to transform complex business requirements into data engineering specifications and extensive experience in developing Data Flows and Pipelines in Microsoft Azure Data Factory and data lakes.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            My background includes Data Warehousing and Analytics, with proficiency in AGILE SCRUM methodology and tools such as JIRA. I'm experienced in handling reporting and dashboard services using Big Data Analysis, Power BI, and Power BI Service.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">ETL Pipelines</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Warehouse</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Microsoft Fabric</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Azure Databricks</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Modelling</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Agile/Scrum</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4">Quick Facts</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Experience:</span>
+                                <span class="font-medium">3.5+ Years</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Location:</span>
+                                <span class="font-medium">India</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Specialization:</span>
+                                <span class="font-medium">Azure Data Platform</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Languages:</span>
+                                <span class="font-medium">Python, SQL, C#</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Azure Services -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 azure-blue">Azure Services</h3>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Azure Data Factory</span>
+                                    <span class="text-sm text-gray-500">92%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Azure Databricks</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Microsoft Fabric</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Azure Data Lake Gen2</span>
+                                    <span class="text-sm text-gray-500">90%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Azure DevOps</span>
+                                    <span class="text-sm text-gray-500">80%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming & Data -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 azure-blue">Programming & Data</h3>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">SQL</span>
+                                    <span class="text-sm text-gray-500">95%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Python</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">PySpark</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Apache Spark</span>
+                                    <span class="text-sm text-gray-500">82%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Data Modelling</span>
+                                    <span class="text-sm text-gray-500">87%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 87%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Analytics -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 azure-blue">Tools & Analytics</h3>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Power BI</span>
+                                    <span class="text-sm text-gray-500">90%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Grafana</span>
+                                    <span class="text-sm text-gray-500">75%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">ICEDQ A-B Testing</span>
+                                    <span class="text-sm text-gray-500">78%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">JIRA</span>
+                                    <span class="text-sm text-gray-500">85%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm font-medium">Agile/Scrum</span>
+                                    <span class="text-sm text-gray-500">88%</span>
+                                </div>
+                                <div class="bg-gray-200 rounded-full h-2">
+                                    <div class="azure-bg h-2 rounded-full skill-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Professional Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Experience Item 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Azure Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">Harmony Bioscience | USA</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: Healthcare Patient Admission & Readmission Analytics</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Apr 2025 - Present</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Designed and developed end-to-end data pipelines in Microsoft Fabric, including data ingestion, transformation, and loading using Lakehouse and delta format</li>
+                            <li>• Automated daily ingestion of raw CSV and Excel files from Azure Data Lake Gen2 using Fabric Pipelines to ensure timely data availability</li>
+                            <li>• Built transformation logic in Fabric Notebooks using PySpark and SQL to cleanse, enrich, and standardize patient admission and readmission data</li>
+                            <li>• Implemented a multi-layered data architecture (bronze → silver → gold) to improve data traceability and optimize reporting performance</li>
+                            <li>• Enabled real-time monitoring and reporting by integrating the gold layer data into Power BI, delivering insights into patient flow and departmental efficiency</li>
+                            <li>• Ensured data consistency, accuracy, and reliability through schema validations and transformation rules embedded in the notebook flows</li>
+                            <li>• Developed mobile-friendly, interactive dashboards to support clinic stakeholders in making data-driven decisions</li>
+                            <li>• Scaled the solution for long-term data growth and reduced manual workload for healthcare staff by automating report generation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Azure Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">PepsiCo | USA</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: FP&A Data Foundation Team</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Nov 2023 - Mar 2025</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Developed Databricks notebooks to streamline source-to-silver and silver-to-gold workflows, leveraging PySpark and SQL for efficient data processing</li>
+                            <li>• Built Azure Data Factory pipelines encompassing a comprehensive set of activities to facilitate seamless data movement and transformation</li>
+                            <li>• Implemented both automated and manual ETL processes efficiently handling large datasets with millions of rows to ensure data accuracy and integrity</li>
+                            <li>• Conducted thorough validation of silver and gold layer data using the ICEDQ tool, ensuring the quality and reliability of the processed data</li>
+                            <li>• Orchestrated the scheduling and monitoring of Autoloader jobs daily through the ingestion portal, optimizing data loading processes for timely and accurate results</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">PySpark, SQL, Azure Databricks, Azure Data Factory, ADLS Gen2</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Azure Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">Harmony Bioscience | Chennai, India</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: Sales Dashboard Enhancement</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Aug 2022 - Oct 2023</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Created multiple reports related to sales, inventory, shipment delivery, and dashboard for Harmony Biosciences business users</li>
+                            <li>• Created Azure data factory pipelines with a set of activities for comprehensive data processing workflows</li>
+                            <li>• Applied automated and manual ETL processes across millions of rows of data to ensure optimal performance and accuracy</li>
+                            <li>• Developed interactive dashboards and reports to support business decision-making processes</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">PySpark, SQL, Power BI, Azure Databricks, Azure Data Factory, ADLS Gen2</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 4 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Azure Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">Cricket Social | Chennai, India</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: CS Data Ingestion & Transformation</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">May 2022 - Jul 2022</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Created Azure data factory pipelines with a comprehensive set of activities for seamless data processing</li>
+                            <li>• Applied automated and manual ETL processes across millions of rows of data to ensure data accuracy and performance</li>
+                            <li>• Created Synapse SQL Pool tables to store processed results in tabular format for Data Scientists and Data Analysts access</li>
+                            <li>• Used PySpark to distribute data processing on large batch datasets, significantly improving ingestion speed and efficiency</li>
+                            <li>• Supported implementation and active monitoring of controls and programs for precision and efficacy</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">PySpark, SQL, MS Azure, Databricks, Azure SQL Database, Synapse SQL Pool, ADB Blob/ADLS Gen2, Agile, Scrum</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 5 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Junior Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">HexaCorp | Chennai, India</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: Data Migration</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Mar 2022 - May 2022</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Assessed on-premises SQL Server databases and identified comprehensive migration requirements</li>
+                            <li>• Designed and developed Azure Data Factory pipelines to migrate data from on-premises SQL Server databases to Azure SQL Database</li>
+                            <li>• Tested migration pipelines thoroughly to ensure data was migrated accurately and completely without data loss</li>
+                            <li>• Deployed migration pipelines and monitored the entire migration process for optimal performance</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">PySpark, SQL, Databricks, Azure Data Factory, Azure SQL Database, Logic App, MS SQL Server</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 6 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Junior Data Engineer</h3>
+                                <p class="text-gray-600 font-medium">Fresh Service | Chennai, India</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: Fresh Service Integration</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Jan 2022 - Mar 2022</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Created Azure SQL database to load REST API data using Data Factory web activity and copy activity</li>
+                            <li>• Created view tables and provided access permissions for Power BI developers to create comprehensive dashboard reports</li>
+                            <li>• Developed ticket status reports and inventory asset reports for business stakeholders</li>
+                            <li>• Automated reporting processes using Power BI service scheduling concepts for timely data delivery</li>
+                            <li>• Implemented data security measures and restricted export options for sensitive reports</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">Azure Data Factory, ADLS Gen2, Azure SQL Database, Power BI, Logic App</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 7 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-semibold azure-blue">Junior Data Analyst</h3>
+                                <p class="text-gray-600 font-medium">Pizza Pizza | Chennai, India</p>
+                                <p class="text-sm text-gray-500 mt-1">Project: Pizza Pizza E-commerce Analytics</p>
+                            </div>
+                            <div class="text-gray-500 mt-2 md:mt-0">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Dec 2021 - Jan 2022</span>
+                            </div>
+                        </div>
+                        <ul class="text-gray-700 space-y-2">
+                            <li>• Developed comprehensive data modeling and sales reporting solutions for pizza ordering e-commerce platform using cloud and BI tools</li>
+                            <li>• Followed SDLC methodologies throughout all deployment activities including design, development, testing, and quality assurance support</li>
+                            <li>• Created user and admin dashboards with integrated database activities for enhanced business intelligence</li>
+                            <li>• Implemented order status monitoring page to provide real-time tracking capabilities for customers and administrators</li>
+                            <li>• Designed and developed interactive reports and visualizations to support business decision-making processes</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="text-sm text-gray-600 font-medium">Technologies:</span>
+                            <span class="text-sm text-gray-500">MySQL, Power BI Desktop, Power BI Service, GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Real-time Analytics Platform</h3>
+                            <p class="text-gray-600 mb-4">Built a comprehensive real-time analytics platform using Azure Event Hubs, Stream Analytics, and Power BI for processing IoT sensor data.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Azure Event Hubs</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Stream Analytics</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Power BI</span>
+                            </div>
+                            <button onclick="showProjectDetails('project1')" class="text-blue-600 hover:text-blue-800 font-medium">View Details →</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Data Lake Architecture</h3>
+                            <p class="text-gray-600 mb-4">Designed and implemented a scalable data lake solution on Azure Data Lake Storage Gen2 with automated data governance and cataloging.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">ADLS Gen2</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Azure Purview</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Databricks</span>
+                            </div>
+                            <button onclick="showProjectDetails('project2')" class="text-blue-600 hover:text-blue-800 font-medium">View Details →</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">ML Pipeline Automation</h3>
+                            <p class="text-gray-600 mb-4">Created an end-to-end ML pipeline using Azure ML and Data Factory for automated model training, validation, and deployment.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Azure ML</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Data Factory</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Python</span>
+                            </div>
+                            <button onclick="showProjectDetails('project3')" class="text-blue-600 hover:text-blue-800 font-medium">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- Bachelor's Degree -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div class="flex items-start">
+                                <div class="w-16 h-16 azure-bg rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold azure-blue">Bachelor of Engineering (Computer Science & Engineering)</h3>
+                                    <p class="text-gray-600 font-medium">Anna University</p>
+                                    <p class="text-sm text-gray-500 mt-1">Comprehensive computer science education with focus on software engineering, data structures, and system design</p>
+                                </div>
+                            </div>
+                            <div class="mt-4 md:mt-0 text-right">
+                                <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-2">
+                                    79.25% Aggregate
+                                </div>
+                                <p class="text-gray-500 text-sm">Graduated</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h4 class="font-semibold text-gray-700 mb-2">Key Coursework:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Structures & Algorithms</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Database Management Systems</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Software Engineering</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Computer Networks</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Operating Systems</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Web Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Higher Secondary Education -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold azure-blue">Higher Secondary Certificate (12th Grade)</h3>
+                                    <p class="text-gray-600 font-medium">State Board of Higher Secondary Education</p>
+                                    <p class="text-sm text-gray-500 mt-1">Science stream with Mathematics, Physics, Chemistry, and Computer Science</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 md:mt-0">
+                                <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    85% Aggregate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Education -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-lg card-hover">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 2.18L18.82 9 12 12.72 5.18 9 12 5.18z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold azure-blue">Secondary School Certificate (10th Grade)</h3>
+                                    <p class="text-gray-600 font-medium">State Board of Secondary Education</p>
+                                    <p class="text-sm text-gray-500 mt-1">Strong foundation in core subjects with excellent academic performance</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 md:mt-0">
+                                <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                                    87.8% Aggregate
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Achievements Summary -->
+                <div class="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-semibold azure-blue mb-4 text-center">Academic Excellence</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-2xl font-bold azure-blue">79.25%</div>
+                            <p class="text-gray-600">Engineering Degree</p>
+                            <p class="text-sm text-gray-500">Computer Science & Engineering</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold azure-blue">85%</div>
+                            <p class="text-gray-600">Higher Secondary</p>
+                            <p class="text-sm text-gray-500">Science Stream</p>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold azure-blue">87.8%</div>
+                            <p class="text-gray-600">Secondary School</p>
+                            <p class="text-sm text-gray-500">All Subjects</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-700">Consistent academic excellence throughout educational journey with strong foundation in computer science fundamentals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-1 gap-6">
+                    <!-- Certification 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover flex items-center">
+                        <div class="w-16 h-16 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold azure-blue">Microsoft Azure Data Engineer Associate Certification</h3>
+                            <p class="text-gray-600">Certification Code: DP-203</p>
+                            <p class="text-gray-500 text-sm">Advanced data engineering skills on Microsoft Azure platform</p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover flex items-center">
+                        <div class="w-16 h-16 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold azure-blue">Microsoft Azure Data Fundamentals Certification</h3>
+                            <p class="text-gray-600">Certification Code: DP-900</p>
+                            <p class="text-gray-500 text-sm">Core data concepts and Azure data services fundamentals</p>
+                        </div>
+                    </div>
+
+                    <!-- Certification 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover flex items-center">
+                        <div class="w-16 h-16 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold azure-blue">Microsoft Azure Fundamentals Certification</h3>
+                            <p class="text-gray-600">Certification Code: AZ-900</p>
+                            <p class="text-gray-500 text-sm">Foundational knowledge of cloud services and Microsoft Azure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Let's Connect</h3>
+                    <p class="text-gray-700">I'm always interested in discussing new opportunities, data engineering challenges, or potential collaborations. Feel free to reach out!</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center hover:bg-gray-100 transition duration-300 cursor-pointer" onclick="window.open('mailto:vigneshsiva3699@gmail.com', '_blank')">
+                        <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium">vigneshsiva3699@gmail.com</p>
+                            <p class="text-gray-600 text-sm">Email</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center hover:bg-gray-100 transition duration-300 cursor-pointer" onclick="window.open('tel:+917448974705', '_blank')">
+                        <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium">+91 7448974705</p>
+                            <p class="text-gray-600 text-sm">Phone</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center hover:bg-gray-100 transition duration-300 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/vignesan-saravanan-9b25671ab/', '_blank')">
+                        <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium">LinkedIn Profile</p>
+                            <p class="text-gray-600 text-sm">Professional Network</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg flex items-center hover:bg-gray-100 transition duration-300 cursor-pointer" onclick="window.open('https://www.youtube.com/@vijaquick', '_blank')">
+                        <div class="w-12 h-12 azure-bg rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium">YouTube Channel</p>
+                            <p class="text-gray-600 text-sm">Tech Content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Vignesan Saravanan. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <button onclick="openLinkedIn()" class="text-gray-400 hover:text-white transition duration-300">LinkedIn</button>
+                <button onclick="openGitHub()" class="text-gray-400 hover:text-white transition duration-300">GitHub</button>
+                <button onclick="openTwitter()" class="text-gray-400 hover:text-white transition duration-300">YouTube</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-96 overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 id="modalTitle" class="text-2xl font-bold azure-blue"></h3>
+                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div id="modalContent" class="text-gray-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Download resume function
+        function downloadResume() {
+            window.open('https://github.com/vignesan-siva/Resume-vignesan/blob/main/Vignesan%20Saravanan%20-%20Azure%20Data%20Engineer.docx', '_blank');
+        }
+
+
+
+        // Social media links
+        function openLinkedIn() {
+            window.open('https://www.linkedin.com/in/vignesan-saravanan-9b25671ab/', '_blank');
+        }
+
+        function openGitHub() {
+            alert('GitHub profile would open here.');
+        }
+
+        function openTwitter() {
+            window.open('https://www.youtube.com/@vijaquick', '_blank');
+        }
+
+        // Project details modal
+        function showProjectDetails(projectId) {
+            const modal = document.getElementById('projectModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+
+            const projectDetails = {
+                project1: {
+                    title: 'Real-time Analytics Platform',
+                    content: `
+                        <p class="mb-4">This project involved building a comprehensive real-time analytics platform to process and analyze IoT sensor data from manufacturing equipment.</p>
+                        <h4 class="font-semibold mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside mb-4 space-y-1">
+                            <li>Real-time data ingestion from 500+ IoT sensors</li>
+                            <li>Stream processing with complex event processing rules</li>
+                            <li>Interactive dashboards with sub-second refresh rates</li>
+                            <li>Automated alerting system for anomaly detection</li>
+                        </ul>
+                        <h4 class="font-semibold mb-2">Technologies Used:</h4>
+                        <p class="mb-4">Azure Event Hubs, Stream Analytics, Azure Functions, Power BI, Azure SQL Database</p>
+                        <h4 class="font-semibold mb-2">Results:</h4>
+                        <p>Reduced equipment downtime by 35% and improved operational efficiency by 25%.</p>
+                    `
+                },
+                project2: {
+                    title: 'Data Lake Architecture',
+                    content: `
+                        <p class="mb-4">Designed and implemented a modern data lake solution to centralize data from multiple sources and enable advanced analytics capabilities.</p>
+                        <h4 class="font-semibold mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside mb-4 space-y-1">
+                            <li>Multi-zone data lake architecture (Bronze, Silver, Gold)</li>
+                            <li>Automated data cataloging and lineage tracking</li>
+                            <li>Self-service analytics capabilities for business users</li>
+                            <li>Comprehensive data governance framework</li>
+                        </ul>
+                        <h4 class="font-semibold mb-2">Technologies Used:</h4>
+                        <p class="mb-4">Azure Data Lake Storage Gen2, Azure Purview, Databricks, Delta Lake, Azure Data Factory</p>
+                        <h4 class="font-semibold mb-2">Results:</h4>
+                        <p>Enabled 10x faster data discovery and reduced time-to-insight by 50%.</p>
+                    `
+                },
+                project3: {
+                    title: 'ML Pipeline Automation',
+                    content: `
+                        <p class="mb-4">Created an end-to-end machine learning pipeline for automated model training, validation, and deployment in production.</p>
+                        <h4 class="font-semibold mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside mb-4 space-y-1">
+                            <li>Automated feature engineering and data preprocessing</li>
+                            <li>Model training with hyperparameter optimization</li>
+                            <li>A/B testing framework for model validation</li>
+                            <li>Continuous monitoring and model drift detection</li>
+                        </ul>
+                        <h4 class="font-semibold mb-2">Technologies Used:</h4>
+                        <p class="mb-4">Azure Machine Learning, Azure Data Factory, Python, MLflow, Azure Container Instances</p>
+                        <h4 class="font-semibold mb-2">Results:</h4>
+                        <p>Reduced model deployment time from weeks to hours and improved model accuracy by 15%.</p>
+                    `
+                }
+            };
+
+            title.textContent = projectDetails[projectId].title;
+            content.innerHTML = projectDetails[projectId].content;
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Animate skill bars on scroll
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.style.width;
+                    }
+                });
+            });
+
+            skillBars.forEach(bar => observer.observe(bar));
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            animateSkillBars();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'963b9175b6ac9373',t:'MTc1MzI3NzgwMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
